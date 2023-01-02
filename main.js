@@ -77,6 +77,6 @@ function renderHourlyWeather(hourly) {
     setValue("day", DAY_FORMATTER.format(hour.timestamp), { parent: element })
     setValue("time", HOUR_FORMATTER.format(hour.timestamp), { parent: element })
     element.querySelector("[data-icon]").src = getIconUrl(hour.iconCode)
-    if (i < 10) hourlySection.append(element)
+    if (i < 20) hourlySection.append(element)
   })
 }
